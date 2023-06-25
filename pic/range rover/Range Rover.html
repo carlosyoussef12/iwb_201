@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Range Rover</title>
+	<link rel="stylesheet" href="../../css.css">
+</head>
+
+<body>
+	<div>
+	<h1><img src="../1477996201.png">&nbsp;IWB 201</h1>
+	</div>
+<nav id="about us">
+	<a href="../../car list.html">car list</a>
+	<a href="../../home.html">home</a>
+	<a href="../../about us.html">about us</a>
+	<div class="animation start-home"></div>
+	</nav>
+	<table class="fl-table" id="fl-table">
+    <img src="rr-24my-sv-exterior-170523-01-6464fd9a82b04.jpg" style="margin: 70px; width: 300px; height: 170px; border: 1px solid black;">
+    <img src="fg_4B88Shf0spr6nBlBu6gD5ovx_PwJGpI80lBJ6d4VkVhamytCNPYGA7ZAR_9uJRLVVFUihK6-XbxHPxZHXNUtNTanV.jpg" style="margin: 70px; width: 300px; height: 170px; border: 1px solid black;">
+		<tr>
+      <th>السعر بالليرة السورية</th>
+      <th>التفاصيل</th>
+    </tr>
+    <tr>
+      <td id="price">176000</td>
+      <td >قيمة الإيجار اليومي</td>
+    </tr>
+	<tr>
+	  <td id="tax">9700</td>
+	  <td>الضريبة</td>
+	</tr>
+    <tr>
+      <td id="fees">4000</td>
+      <td>رسم إعادة الإعمار</td>
+    </tr>
+	<tr>
+      <td><button style="display: block; margin-top: 10px; padding: 6px 8px; font-size: 14px; 
+  font-weight: bold;
+  border: none;
+  border-radius: 2px;
+  background-color: #9C1C1E;
+  color: white;
+  cursor: pointer;" onClick="sum()">حساب القيمة النهائية</button></td>
+      <td>لحساب القيمة النهائية</td>
+    </tr>
+	<tr>
+	 <td id="total"></td>
+	 <td>القيمة النهائية</td>
+	</tr>
+</table>
+<div class="button-group" style="border: double; padding: 11px 100px; font-size: 10px; display:inline-block; ">
+	<a href="../../home.html"><button class="button-link">إلغاء</button></a>
+      <input  type="checkbox" id="follow" name="follow" form="my-form"><button class="button-link" onclick="scrollToElement('target')">متابعة</button>
+	</div>
+	 <section class="appointment-section">
+      <div class="container">
+          <div class="sec-title">
+              <div id="target" class="title">هل تود أن تستأجر هذه السيارة ؟ أدخل بياناتك هنا</div>
+            </div>
+            <div class="row clearfix">
+            
+              <!--Form Column-->
+              <div class="form-column col-md-8 col-sm-12 col-xs-12">
+                  <div class="inner-column">
+                      
+                        <!-- Default Form -->
+                        <div class="default-form">
+                                
+                            <!--Contact Form-->
+                            <form method="post" action="contact.html">
+                                <div class="row clearfix">
+                                
+                                    <div class="column col-md-6 col-sm-6 col-xs-12">
+                                        
+                                        <div class="form-group">
+                                            <input type="text" name="username" placeholder="الأسم الكامل" required>
+                                        </div>
+                                        
+                                        <!--Form Group-->
+                                        <div class="form-group">
+                                            
+                                        </div>
+                                        
+                                        <div class="form-group">
+<select id="province" style="width: 130px; float: left;">
+  <option selected>رمز المحافظة</option>
+  <option value="01-">01-</option>
+  <option value="02-">02-</option>
+  <option value="03-">03-</option>
+  <option value="04-">04-</option>
+  <option value="05-">05-</option>
+  <option value="06-">06-</option>
+  <option value="07-">07-</option>
+  <option value="08-">08-</option>
+  <option value="09-">09-</option>
+  <option value="10-">10-</option>
+  <option value="11-">11-</option>
+  <option value="12-">12-</option>
+  <option value="13-">13</option>
+  <option value="14-">14</option>
+</select>
+                     <input type="text" class="datepicker" id="national-id" maxlength="11" name="text" placeholder="الرقم الوطني" required>
+                               <i class="far fa-calendar-alt"></i>
+                                   </div>
+                                        
+                                    </div>
+                                    
+                                    <div class="column col-md-6 col-sm-6 col-xs-12">
+                                        
+                                        <div class="form-group">
+                                            <input type="age" name="age" placeholder="تاريخ الولادة" required>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <input type="text" name="phone" placeholder="رقم الهاف" required>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <input class="timepicker" type="text" name="schedule" placeholder="عدد الأيام أو الأسابيع او الأشهر" required>
+                                            <i class="far fa-clock"></i>
+                                        </div>
+                                       <div id="captcha" class="captcha-container"></div>
+                                            <input type="text" id="captcha_input" class="captcha-input" required>
+                                               <button onclick="checkCaptcha()" class="captcha-button">تحقق</button>
+                                    </div>
+                                
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group">
+                                        <button class="theme-btn appointment-btn" type="submit" name="submit-form">تقديم الطلب</button>
+                                    </div>
+                                    
+                                </div>
+                            </form>
+                                
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <!--Form Column-->
+              <div class="schedule-column col-md-4 col-sm-12 col-xs-12">
+                  <div class="inner-outer">
+                        <div class="inner-column">
+                            <h2>ساعات العمل</h2>
+                            <ul class="time-list">
+                                <li>Monday - Friday 9.00 AM - 5.00 PM</li>
+                                <li>Saturday 9.00 AM - 3.00 PM</li>
+                                <li><strong>الأحد عطلة</strong></li>
+                                <li class="closed">لا نغلق في عطل الأعياد</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+	<script src="../../js.js"></script>
+</body>
+</html>
